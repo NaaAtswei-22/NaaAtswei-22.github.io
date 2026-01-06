@@ -929,6 +929,7 @@ footer {
     cursor: default;
 }
 
+/* Styling for videos inside project cards */
 .card-video-container {
     width: 100%;
     overflow: hidden;
