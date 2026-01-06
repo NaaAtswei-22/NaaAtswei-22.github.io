@@ -928,3 +928,20 @@ footer {
     transform: scale(1.05);
     cursor: default;
 }
+
+.card-video-container {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; /* Removes extra spacing at the bottom */
+}
+
+.card-video-container video, 
+.card-video-container iframe {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Subtle zoom when hovering over the video area */
+.card-video-container:hover video {
+    transform: scale(1.02);
+}
