@@ -946,3 +946,27 @@ footer {
 .card-video-container:hover video {
     transform: scale(1.02);
 }
+
+.image-scroller {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 10px;
+    padding: 10px;
+    background: #f1f1f1;
+    white-space: nowrap;
+}
+
+.image-scroller img {
+    height: 100px;
+    border-radius: 4px;
+    flex-shrink: 0; /* Prevents images from squishing */
+}
+
+/* Optional: Style the scrollbar to make it look cleaner */
+.image-scroller::-webkit-scrollbar {
+    height: 6px;
+}
+.image-scroller::-webkit-scrollbar-thumb {
+    background: #00bcd4;
+    border-radius: 10px;
+}
